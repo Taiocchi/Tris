@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\taiocchi.21206\\TPS\\Tris\\Tris\\Tris\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCAF887-7E6A-4B16-AB5A-AB10E590828D}|Thread_form1\\Thread_form1.csproj|c:\\users\\taiocchi.21206\\tps\\tris\\tris\\tris\\thread_form1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCAF887-7E6A-4B16-AB5A-AB10E590828D}|Thread_form1\\Thread_form1.csproj|solutionrelative:thread_form1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCAF887-7E6A-4B16-AB5A-AB10E590828D}|Thread_form1\\Thread_form1.csproj|C:\\Users\\taiocchi.21206\\TPS\\Tris\\Tris\\Tris\\thread_form1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5CCAF887-7E6A-4B16-AB5A-AB10E590828D}|Thread_form1\\Thread_form1.csproj|solutionrelative:thread_form1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CCAF887-7E6A-4B16-AB5A-AB10E590828D}|Thread_form1\\Thread_form1.csproj|c:\\users\\taiocchi.21206\\tps\\tris\\tris\\tris\\thread_form1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CCAF887-7E6A-4B16-AB5A-AB10E590828D}|Thread_form1\\Thread_form1.csproj|solutionrelative:thread_form1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\taiocchi.21206\\TPS\\Tris\\Tris\\Tris\\Thread_form1\\Form1.cs",
+              "RelativeDocumentMoniker": "Thread_form1\\Form1.cs",
+              "ToolTip": "C:\\Users\\taiocchi.21206\\TPS\\Tris\\Tris\\Tris\\Thread_form1\\Form1.cs",
+              "RelativeToolTip": "Thread_form1\\Form1.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAA1wGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T21:22:15.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Progettazione]",
+              "DocumentMoniker": "C:\\Users\\taiocchi.21206\\TPS\\Tris\\Tris\\Tris\\Thread_form1\\Form1.cs",
+              "RelativeDocumentMoniker": "Thread_form1\\Form1.cs",
+              "ToolTip": "C:\\Users\\admin\\Desktop\\Tris\\Tris\\Tris\\Thread_form1\\Form1.cs [Progettazione]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\admin\\Desktop\\Tris\\Tris\\Tris\\Thread_form1\\Form1.cs [Progettazione]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T21:22:03.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\taiocchi.21206\\TPS\\Tris\\Tris\\Tris\\Thread_form1\\Program.cs",
+              "RelativeDocumentMoniker": "Thread_form1\\Program.cs",
+              "ToolTip": "C:\\Users\\taiocchi.21206\\TPS\\Tris\\Tris\\Tris\\Thread_form1\\Program.cs",
+              "RelativeToolTip": "Thread_form1\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-10T21:21:58.009Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

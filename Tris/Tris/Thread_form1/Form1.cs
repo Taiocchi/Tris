@@ -1,3 +1,5 @@
+using System.Drawing.Text;
+
 namespace Thread_form1
 {
     public partial class Form1 : Form
@@ -12,27 +14,39 @@ namespace Thread_form1
             tempo_rimanente.Text = "Tempo rimanente: " + tempo_giocata.ToString();
         }
 
-        private void controlloVittoria(Button button)
+        private bool controlloVittoria(Button button)
         {
+
+
+            return (btn1.Text == btn2.Text && btn2.Text == btn3.Text && btn1.Text != "" ||
+                btn4.Text == btn5.Text && btn5.Text == btn6.Text && btn4.Text != "" ||
+                btn7.Text == btn8.Text && btn8.Text == btn9.Text && btn7.Text != "" ||
+                btn1.Text == btn4.Text && btn4.Text == btn7.Text && btn1.Text != "" ||
+                btn2.Text == btn5.Text && btn5.Text == btn8.Text && btn2.Text != "" ||
+                btn3.Text == btn6.Text && btn6.Text == btn9.Text && btn3.Text != "" ||
+                btn1.Text == btn5.Text && btn5.Text == btn9.Text && btn1.Text != "" ||
+                btn3.Text == btn5.Text && btn5.Text == btn7.Text && btn3.Text != "");
+                
+            
+        }
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+            timer1.Start();
+            Button button = (Button)sender;
             if (button.Text == "")
             {
                 //Per scriverlo sul bottone cliccato
                 button.Text = turno;
-
-                if (btn1.Text == btn2.Text && btn2.Text == btn3.Text && btn1.Text != "" ||
-                    btn4.Text == btn5.Text && btn5.Text == btn6.Text && btn4.Text != "" ||
-                    btn7.Text == btn8.Text && btn8.Text == btn9.Text && btn7.Text != "" ||
-                    btn1.Text == btn4.Text && btn4.Text == btn7.Text && btn1.Text != "" ||
-                    btn2.Text == btn5.Text && btn5.Text == btn8.Text && btn2.Text != "" ||
-                    btn3.Text == btn6.Text && btn6.Text == btn9.Text && btn3.Text != "" ||
-                    btn1.Text == btn5.Text && btn5.Text == btn9.Text && btn1.Text != "" ||
-                    btn3.Text == btn5.Text && btn5.Text == btn7.Text && btn3.Text != "")
+                if (controlloVittoria((Button)sender))
                 {
+                    timer1.Stop();
                     MessageBox.Show("Letsgosky " + turno + " hai vinto!!!");
                     Form1_Load(this, EventArgs.Empty);
                 }
                 else if (cont == 9)
                 {
+                    timer1.Stop();
                     MessageBox.Show("Pareggio");
                     Form1_Load(this, EventArgs.Empty);
                 }
@@ -48,12 +62,6 @@ namespace Thread_form1
 
                 tempo_giocata = 4;
             }
-        }
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            timer1.Enabled = true;
-            timer1.Start();
-            controlloVittoria((Button)sender);
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -107,13 +115,36 @@ namespace Thread_form1
                 {
                     bottoni[indiceCasuale].Text = turno;
                     inserito = true;
+                    cont++;
+                    if (controlloVittoria(bottoni[indiceCasuale]))
+                    {
+                        timer1.Stop();
+                        MessageBox.Show("Letsgosky " + turno + " hai vinto!!!");
+                        Form1_Load(this, EventArgs.Empty);
+                    }
+                    else if (cont == 9)
+                    {
+                        timer1.Stop();
+                        MessageBox.Show("Pareggio");
+                        Form1_Load(this, EventArgs.Empty);
+                    }
+
+
                     if (turno == "X")
                         turno = "O";
                     else
                         turno = "X";
 
                     label_turno.Text = turno;
-                    controlloVittoria(bottoni[indiceCasuale]);
+                    
+                    if (turno == "X")
+                        turno = "O";
+                    else
+                        turno = "X";
+
+                    label_turno.Text = turno;
+                    tempo_giocata = 4;
+
                 }
             }
         }
