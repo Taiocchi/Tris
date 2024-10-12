@@ -136,13 +136,6 @@ namespace Thread_form1
                         turno = "X";
 
                     label_turno.Text = turno;
-                    
-                    if (turno == "X")
-                        turno = "O";
-                    else
-                        turno = "X";
-
-                    label_turno.Text = turno;
                     tempo_giocata = 4;
 
                 }
